@@ -43,7 +43,7 @@ const scripts = function () {
 }
 
 const img = function () {
-    return src(["src/image/**/*.png", "src/image/**/*.jpg", "src/image/**/*.svg"])
+    return src(["src/images/**/*.png", "src/images/**/*.jpg", "src/images/**/*.svg"])
         .pipe(newer("dist/image"))
         .pipe(imagemin())
         .pipe(dest("dist/image"));
